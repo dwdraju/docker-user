@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  app:
+    build: .
+    environment:
+     - USER_ID=1000
+     - GROUP_ID=1000
+     - USERNAME=alpha
+
+    volumes:
+      - ./:/home/alpha
